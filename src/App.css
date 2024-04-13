@@ -1,0 +1,345 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ant-layout .ant-layout-sider {
+  position: relative;
+  min-width: 0;
+  background:  #033562;
+}
+.homecard{
+  margin-top: -20px;
+  width: 75rem; 
+  height: 15rem; 
+  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(25, 24, 24, 0.1);
+}
+.font{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 0px 11px 10px rgba(81,67,21,0.8);
+}
+.custommenu {
+  font-size: 20px;
+  border-bottom: none;
+  justify-content: space-between;
+  background-color:#033562;
+  font-weight:700;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: white;
+  padding: 5px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  text-decoration: none;
+}
+.menuitem {
+  background-color:#033562;
+  font-size: 15px;
+  padding-top: 5rem;
+  color: white;
+  position: absolute;
+}
+.ant-menu-light.ant-menu-horizontal .ant-menu-submenu::after {
+ border-bottom: none;
+}
+.ant-menu-light .ant-menu-submenu-selected .ant-menu-submenu-title {
+   color:rgb(11, 212, 212); 
+}
+.custommenu.scrolled {
+  background-color: rgb(166, 34, 56) !important;
+  font-size: 15px;
+}
+
+.menu-item:hover {
+  color: rgb(207, 192, 192) !important;
+}
+.menu-icon {
+  font-size: 20px !important;
+}
+.ant-input-affix-wrapper {
+  border-color: rgb(48, 31, 110);
+  width: 25rem;
+  height: 4rem;
+  border-width: 2.5px;
+  margin-bottom: 10px;
+}
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border-color: rgb(48, 31, 110);
+  border-width: 3px;
+}
+.ant-select-selection-placeholder {
+  font-weight: 700;
+}
+.ant-picker {
+  border-color: rgb(48, 31, 110);
+  width: 10rem;
+  height: 4rem;
+  border-width: 2.5px;
+  margin-bottom: 10px;
+}
+.ant-picker .ant-picker-suffix {
+  color: rgb(0, 253, 0);
+}
+.seatinputs{
+  display:flex;  
+}
+.ant-input {
+  border-color: rgb(48, 31, 110);
+  width: 12rem;
+  height: 3.5rem;
+  border-width: 3px;
+  margin-bottom: 10px;
+  margin-Right: 15px;
+}
+.syncicon {
+  font-size: 30px !important;
+  display: flex;
+  justify-content: center;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+h2,
+h4 {
+  text-align: center;
+}
+.dateinput{
+  border-color: rgb(48, 31, 110);
+  width: 25rem;
+  height: 4rem;
+  border-width: 3px;
+  margin-bottom: 10px;
+}
+.table td ,.table th{
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+   background: linear-gradient(to right, #ff7e5f, #feb47b);
+} 
+.ant-menu-item{
+  top: 10px;
+  
+}
+.custommenu{
+  padding-bottom:5px;
+}
+#conference-timeline {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+#conference-timeline .conference-center-line {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  left: 30%;
+  margin-left: -2px;
+  background-color: #4e5ed3;
+}
+#conference-timeline .conference-timeline-content {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.timeline-art {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.timeline-art .content-left-container {
+  max-width: 30%;
+}
+.timeline-art .content-right-container {
+  max-width: 70%;
+  width: 100%;
+}
+.timeline-art .content-left-container {
+  float: left;
+}
+.timeline-art .content-right-container {
+  float: right;
+}
+.timeline-art .meta-date {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 22px;
+  height: 22px;
+  margin-left: -131px;
+  color: black;
+  border-radius: 100%;
+  background: white;
+  border: 1px solid #4e5ed3;
+  box-shadow: 3px 3px 0px #bab5f8;
+  box-shadow: 3px 3px 0px #bab5f8;
+  border-radius: 50%;
+}
+.timeline-art .meta-date .date {
+  display: block;
+  text-align: center;
+}
+.loader {
+  width: 10em;
+  height: 10em;
+  font-size: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader .face {
+  position: absolute;
+  border-radius: 50%;
+  border-style: solid;
+  animation: animate 3s linear infinite;
+}
+.loader .face:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  color: gold;
+  border-color: currentColor transparent transparent currentColor;
+  border-width: 0.2em 0.2em 0em 0em;
+  --deg: -45deg;
+  animation-direction: normal;
+}
+.loader .face:nth-child(2) {
+  width: 80%;
+  height: 80%;
+  color: lime;
+  border-color: currentColor currentColor transparent transparent;
+  border-width: 0.2em 0.2em 0em 0.2em;
+  --deg: -135deg;
+  animation-direction: reverse;
+}
+.loader .face:nth-child(3) {
+  width: 60%;
+  height: 60%;
+  color: rgb(255, 25, 0);
+  border-color: currentColor transparent transparent currentColor;
+  border-width: 0.2em 0.2em 0em 0em;
+  --deg: -45deg;
+  animation-direction: normal;
+}
+.loader .face:nth-child(4) {
+  width: 40%;
+  height: 40%;
+  color: rgb(74, 25, 138);
+  border-color: currentColor currentColor transparent transparent;
+  border-width: 0.2em 0.2em 0em 0.2em;
+  --deg: -135deg;
+  animation-direction: reverse;
+}
+@keyframes animate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.userinput {
+  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 12px;
+  width: 20rem;
+  margin: 2rem 0;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  font-size: 15px;
+}
+.submitbtn {
+  display: block;
+  padding: 12px;
+  border-radius: 5px;
+  outline: none;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  width: 100%;
+  margin: 3rem 0;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  border: none;
+  background-color: #56033d;
+}
+.transparent-card {
+  background: #b9e3a2;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding:0px 20px 0px 20px;
+}
+:where(.css-dev-only-do-not-override-1b0bdye).ant-card .ant-card-body {
+  padding:0px 20px 10px 20px;
+ 
+}
+.inputerr {
+  color: red;
+  font-weight: 700;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-left: 7rem;
+  margin-top: -1.5rem;
+}
+.line {
+  position: relative;
+  font-size: 20px;
+}
+.line::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+.line::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+.line::before {
+  bottom: 20;
+}
+.line::after {
+  margin-bottom: 20;
+}
+ .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 20%;
+  height:40%;
+  border-radius: 5px;
+  padding:5px
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.para {
+  padding: 2px 16px;
+  line-height: 1.5em;
+  color:#3494b9
+}
+.signupdecor{
+  margin-top: 10px;
+  font-size:1.2rem;
+  font-weight:700;
+}
+.signupdecor :hover{
+  color:rgb(216, 55, 15);
+
+}
+
+.validationbg{
+  background-image: url("./Asserts/validationbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100vh
+}
+
