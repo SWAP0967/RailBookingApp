@@ -5,6 +5,8 @@ import { CiSearch } from "react-icons/ci";
 import { useDispatch, useSelector } from "react-redux";
 import { setenteredtrainnum, setsearchtrain } from "../../Redux/Action_Creators/ActionCreators";
 import { searchTrainUrl, apiHeaders } from "../../Api";
+import { Link } from "react-router-dom";
+
 
 function TrainSearch() {
   const dispatch = useDispatch();
@@ -148,8 +150,8 @@ function TrainSearch() {
         ]}
       >
         <div>
-          <p>Don't have an account? <a href="/signup">Sign Up</a> </p>
-          <p>Already a user <a href="/login">Login</a></p>
+          <p>Don't have an account? <Link to="/signup">Sign Up</Link> </p>
+          <p>Already a user <Link to="/login">Login</Link></p>
         </div>
       </Modal>
     </div>

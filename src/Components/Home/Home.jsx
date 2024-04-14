@@ -241,14 +241,14 @@ function Home() {
           </Button>,
         ]}
       >
-        <div>
-          <p>
-            Don't have an account? <a href="/signup">Sign Up</a>{" "}
-          </p>
-          <p>
-            Already a user <a href="/login">Login</a>
-          </p>
-        </div>
+       <div>
+    <p>
+      Don't have an account? <Link to="/signup">Sign Up</Link>
+    </p>
+    <p>
+      Already a user <Link to="/login">Login</Link>
+    </p>
+  </div>
       </Modal>
     </div>
   );

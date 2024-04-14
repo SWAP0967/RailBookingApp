@@ -43,8 +43,9 @@ function TrainLiveStatus() {
       handleFetchLiveTrainStatus();
     }
   };
-      // eslint-disable-next-line
-       const handleSignUp = () => {
+   
+ // eslint-disable-next-line
+  const handleSignUp = () => {
     setShowSignUpModal(true);
   };
 
@@ -114,13 +115,10 @@ function TrainLiveStatus() {
       >
         <div>
           <p>
-            Don't have an account? <a href="/signup">Sign Up</a>{" "}
+            Don't have an account? <Link to="/signup">Sign Up</Link>{" "}
           </p>
           <p>
-            Already a user{" "}
-            <a href="/login" onClick={handleLoginSuccess}>
-              Login
-            </a>
+            Already a user <Link to="/login" onClick={handleLoginSuccess}>Login</Link>
           </p>
         </div>
       </Modal>

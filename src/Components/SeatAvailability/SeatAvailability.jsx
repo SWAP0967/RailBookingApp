@@ -216,14 +216,10 @@ function SeatAvailability() {
       >
         <div>
           <p>
-            Don't have an account? <a href="/signup">Sign Up</a>
+            Don't have an account? <Link to="/signup">Sign Up</Link>
           </p>
-          <p>
-            Already a user{" "}
-            <a href="/login" onClick={handleLoginSuccess}>
-              Login
-            </a>
-          </p>
+          <p>Already a user <Link to="/login" onClick={handleLoginSuccess}>Login</Link></p>
+
         </div>
       </Modal>
     </div>
